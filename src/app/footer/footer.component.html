@@ -1,0 +1,26 @@
+<!--<md-toolbar color="primary">
+   <span class="footer-spacer"></span>
+   <md-icon class="footer-icon">home</md-icon>
+   <span class="footer-spacer"></span>
+    <md-icon class="footer-icon">map</md-icon>
+   <span class="footer-spacer"></span>    
+    <md-icon class="footer-icon">playlist_add</md-icon>
+   <span class="footer-spacer"></span>
+    <md-icon class="footer-icon">build</md-icon>
+   <span class="footer-spacer"></span>
+</md-toolbar>-->
+
+<md-button-toggle-group color="primary" #group="mdButtonToggleGroup">
+  <md-button-toggle value="home" routerLink="/home">
+   <md-icon class="footer-icon">home</md-icon>    
+  </md-button-toggle>
+  <md-button-toggle value="map" routerLink="/map">
+    <md-icon class="footer-icon">map</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="playlist_add" routerLink="/tourplan">
+    <md-icon class="footer-icon">playlist_add</md-icon>
+  </md-button-toggle>
+  <md-button-toggle value="build" routerLink="/settings">
+    <md-icon class="footer-icon">build</md-icon>
+  </md-button-toggle>
+</md-button-toggle-group>

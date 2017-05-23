@@ -1,0 +1,27 @@
+tour-footer{
+    position:fixed;   
+    bottom:0px;
+    margin-bottom:0px; 
+}
+md-toolbar{
+    height: 65px !important;
+}
+@media (min-width: 600px) {
+  tour-footer{
+    width: 600px;
+    left:50%;
+    margin-left: -300px;
+    }
+}
+@media(max-width:599px){
+  tour-footer{
+    left:0px;
+    right:0px;
+    }
+}
+.footer-spacer {
+  flex: 1 1 auto;
+}
+.footer-icon {
+  padding: 0 18px;
+}
