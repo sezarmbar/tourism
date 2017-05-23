@@ -1,6 +1,7 @@
 tour-footer{
+    
     position:fixed;   
-    bottom:0px;
+    bottom:1px;
     margin-bottom:0px; 
 }
 md-toolbar{
@@ -10,7 +11,7 @@ md-toolbar{
   tour-footer{
     width: 600px;
     left:50%;
-    margin-left: -300px;
+    margin-left: -200px;
     }
 }
 @media(max-width:599px){
@@ -23,5 +24,6 @@ md-toolbar{
   flex: 1 1 auto;
 }
 .footer-icon {
-  padding: 0 18px;
+  padding: 0 16px;
 }
+.material-icons {font-size: 32px;}

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCheckboxModule , MdIconModule, MdToolbarModule,
-        MdButtonToggleModule
+        MdButtonToggleModule, MdTabsModule, MdCardModule
 } from '@angular/material';
 
 
@@ -13,11 +13,11 @@ import 'hammerjs';
     CommonModule,
     NoopAnimationsModule,
     MdButtonModule, MdCheckboxModule, MdIconModule, MdToolbarModule,
-    MdButtonToggleModule
+    MdButtonToggleModule, MdTabsModule, MdCardModule
   ],
   exports: [
     MdButtonModule, MdCheckboxModule, MdIconModule, MdToolbarModule,
-    MdButtonToggleModule
+    MdButtonToggleModule, MdTabsModule, MdCardModule
     ],
   declarations: []
 })

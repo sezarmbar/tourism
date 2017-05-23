@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +31,10 @@ import { SettingsComponent } from './settings/settings.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+     AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDI4N7QdySwfP8aO0oWipZPbGKJHGAUI_M'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

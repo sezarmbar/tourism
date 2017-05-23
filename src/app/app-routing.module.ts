@@ -6,10 +6,11 @@ import { MapComponent } from './map/map.component';
 import { TourPlaningComponent } from './tour-planing/tour-planing.component';
 import { SettingsComponent } from './settings/settings.component';
 const routes: Routes = [
-  {
-    path: '',
-    children: []
-  },
+  // {
+  //   path: '',
+  //   children: []
+  // },
+  {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
   {path:'map',component:MapComponent},
   {path:'tourplan',component:TourPlaningComponent},
