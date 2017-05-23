@@ -1,5 +1,7 @@
 tour-footer{
-    
+  // background-color: skyblue !important; 
+  z-index: 1000;
+  
     position:fixed;   
     bottom:1px;
     margin-bottom:0px; 
@@ -27,3 +29,7 @@ md-toolbar{
   padding: 0 16px;
 }
 .material-icons {font-size: 32px;}
+
+.md-button-toggle-group{
+  background-color: skyblue !important; 
+}

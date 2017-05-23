@@ -13,11 +13,3 @@ export class FooterComponent implements OnInit {
   }
 
 }
-
-@Directive({
-  selector: 'md-card-footer, mat-card-footer',
-  host: {
-    '[class.mat-card-footer]': 'true'
-  }
-})
-export class MdCardFooter {}
