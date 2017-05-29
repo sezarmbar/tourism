@@ -6,6 +6,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { AgmCoreModule } from '@agm/core';
 
+import { SharedDataService } from './shared/shared-data.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StyleModule } from "./Material/style.module";
@@ -36,7 +38,7 @@ import { SettingsComponent } from './settings/settings.component';
       apiKey: 'AIzaSyDI4N7QdySwfP8aO0oWipZPbGKJHGAUI_M'
     })
   ],
-  providers: [],
+  providers: [SharedDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

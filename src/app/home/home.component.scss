@@ -47,10 +47,18 @@
   text-align: center;
 }
 
-
-.flex-card{
-    width: 250px;
+@media screen and (max-width: 499px) {
+  .flex-card{
+      width:calc(100%-15PX);
+  }
 }
+
+@media screen and (min-width: 560px) {
+  .flex-card{
+      width: 200px;
+  }
+}
+
 
 .mat-card-title {
     font-size: 14px;
@@ -69,4 +77,8 @@ h6,h5,h3,h2 {
 }
 .material-icons {
   font-size: 22px; 
+}
+
+.spase-siv{
+  height: 100px;
 }

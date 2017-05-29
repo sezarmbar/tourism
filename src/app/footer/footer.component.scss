@@ -1,35 +1,198 @@
-tour-footer{
-  // background-color: skyblue !important; 
-  z-index: 1000;
+// tour-footer{
+//   // background-color: skyblue !important; 
+//   z-index: 1000;
   
-    position:fixed;   
-    bottom:1px;
-    margin-bottom:0px; 
-}
-md-toolbar{
-    height: 65px !important;
-}
-@media (min-width: 600px) {
-  tour-footer{
-    width: 600px;
-    left:50%;
-    margin-left: -200px;
-    }
-}
-@media(max-width:599px){
-  tour-footer{
-    left:0px;
-    right:0px;
-    }
-}
-.footer-spacer {
-  flex: 1 1 auto;
-}
-.footer-icon {
-  padding: 0 16px;
-}
-.material-icons {font-size: 32px;}
+//     position:fixed;   
+//     bottom:1px;
+//     margin-bottom:0px; 
+// }
+// md-toolbar{
+//     height: 65px !important;
+// }
+// @media (min-width: 600px) {
+//   tour-footer{
+//     width: 600px;
+//     left:50%;
+//     margin-left: -200px;
+//     }
+// }
+// @media(max-width:599px){
+//   tour-footer{
+//     left:0px;
+//     right:0px;
+//     }
+// }
+// .footer-spacer {
+//   flex: 1 1 auto;
+// }
+// .footer-icon {
+//   padding: 0 16px;
+// }
+// .material-icons {font-size: 32px;}
 
-.md-button-toggle-group{
-  background-color: skyblue !important; 
+// .md-button-toggle-group{
+//   background-color: skyblue !important; 
+// }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#cssmenu {z-index: 1000;
+  margin-left: calc( 50% - 155px);
+  background: #E8E8E8;
+  width: 450x;
+ border-bottom: 10px black solid;
+height: 44px;
+
+}
+.footer-s{z-index: 1000;
+position: fixed;
+margin-bottom:0px; 
+bottom:1px;
+
+// width: 300px;
+}
+#cssmenu ul {
+  /*content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;*/
+
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+
+}
+#cssmenu ul li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+
+  border-bottom:10px solid #000 ;
+}
+.last {
+float:right;
+padding-left:60px;
+font-style:italic;}
+
+
+#cssmenu ul li a:hover {
+  color: #000;
+  border-color:#5ae1e4;
+}
+#cssmenu ul li a:hover:before {
+  /*width: 50%;*/
+  border-color:#FFF;
+}
+#cssmenu ul li a:after {
+  /*content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;*/
+}
+#cssmenu ul li a:before {
+ /* content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;*/
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #333333;
+}
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    height: 1px;
+    background: #ffffff;
+    width: 100%;
+    opacity: .2;
+  }
+  #cssmenu ul li.last > a:before,
+  #cssmenu ul li:last-child > a:before {
+    display: none;
+  }
 }

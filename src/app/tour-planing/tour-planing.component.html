@@ -13,7 +13,8 @@
             <h5>Schloßplatz 1 / 26122 Oldenburg</h5>
           </md-card-content>
           <md-card-actions align="end">
-            <button md-button><md-icon>add</md-icon></button>
+            <button md-button (click)="setcard11(!card11)" *ngIf="!card11"><md-icon>add</md-icon></button>
+            <button md-button (click)="setcard11(!card11)" *ngIf="card11"><md-icon>delete</md-icon></button>
             <button md-button>mehr erfahren</button>
           </md-card-actions>
         </md-card>
@@ -29,7 +30,8 @@
             <h5>Kleine Straße 8 / 26121 Oldenburg</h5>
           </md-card-content>
           <md-card-actions align="end">
-            <button md-button><md-icon>add</md-icon></button>
+            <button md-button (click)="setcard12(!card12)" *ngIf="!card12"><md-icon>add</md-icon></button>
+            <button md-button (click)="setcard12(!card12)" *ngIf="card12"><md-icon>delete</md-icon></button>
             <button md-button>mehr erfahren</button>
           </md-card-actions>
         </md-card>
@@ -55,7 +57,8 @@
           <h5>Marie-Curie-Straße 2 / 26129 Oldenburg</h5>
         </md-card-content>
         <md-card-actions align="end">
-          <button md-button><md-icon>add</md-icon></button>
+          <button md-button (click)="setcard21(!card21)" *ngIf="!card21"><md-icon>add</md-icon></button>
+            <button md-button (click)="setcard21(!card21)" *ngIf="card21"><md-icon>delete</md-icon></button>
           <button md-button>mehr erfahren</button>
         </md-card-actions>
       </md-card>
@@ -71,7 +74,8 @@
           <h5>Heiligengeistwall / 26122 Oldenburg</h5>
         </md-card-content>
         <md-card-actions align="end">
-          <button md-button><md-icon>add</md-icon></button>
+          <button md-button (click)="setcard22(!card22)" *ngIf="!card22"><md-icon>add</md-icon></button>
+          <button md-button (click)="setcard22(!card22)" *ngIf="card22"><md-icon>delete</md-icon></button>
           <button md-button>mehr erfahren</button>
         </md-card-actions>
       </md-card>
@@ -83,3 +87,4 @@
 
   </md-tab>
 </md-tab-group>
+<div class="spase-siv"></div>

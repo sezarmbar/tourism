@@ -1,7 +1,8 @@
 <div class="home-contener">
-  <h1>Tour</h1>
+  <h1>Tour </h1>
+  <!--<h4 *ngIf="!card11 || !card12 ||!card21 || !card22">Wähle deine Tour</h4>-->
   <ul class="flex-container wrap">
-    <li class="flex-item">
+    <li class="flex-item" *ngIf="card11">
       <md-card class="flex-card">
         <img md-card-image src="https://www.oldenburg-tourismus.de/images/lu709phyctu-/oliver.jpeg">
         <md-card-title>
@@ -13,28 +14,13 @@
           <h5>Schloßplatz 1 / 26122 Oldenburg</h5>
         </md-card-content>
         <md-card-actions align="end">
-          <button md-button><md-icon>delete</md-icon></button>
+          
+          <button md-button (click)="setcard11(!card11)" *ngIf="card11"><md-icon>delete</md-icon></button>
           <button md-button>mehr erfahren</button>
         </md-card-actions>
       </md-card>
     </li>
-    <li class="flex-item">
-      <md-card class="flex-card">
-        <img md-card-image src="//www.oldenburg-tourismus.de/images/dfiv!saw0ue-/die-historischen-wallanlagen-vor-dem-kulturzentrum-pfl.jpeg">
-        <md-card-title>
-          <h2>Wallanlagen</h2>
-        </md-card-title>
-        <md-card-content>
-          <h6>Denkmalgeschützte Gartenanlagen in der…</h6>
-          <h5>Heiligengeistwall / 26122 Oldenburg</h5>
-        </md-card-content>
-        <md-card-actions align="end">
-          <button md-button><md-icon>delete</md-icon></button>
-          <button md-button>mehr erfahren</button>
-        </md-card-actions>
-      </md-card>
-    </li>
-    <li class="flex-item">
+    <li class="flex-item" *ngIf="card12">
       <md-card class="flex-card">
         <img md-card-image src="//www.oldenburg-tourismus.de/images/5!kl0076rna-/theater.jpeg">
         <md-card-title>
@@ -45,12 +31,46 @@
           <h5>Kleine Straße 8 / 26121 Oldenburg</h5>
         </md-card-content>
         <md-card-actions align="end">
-          <button md-button><md-icon>delete</md-icon></button>
+          
+          <button md-button (click)="setcard12(!card12)" *ngIf="card12"><md-icon>delete</md-icon></button>
+          <button md-button>mehr erfahren</button>
+        </md-card-actions>
+      </md-card>
+    </li>
+    <li class="flex-item" *ngIf="card21">
+      <md-card class="flex-card">
+        <img md-card-image src="//www.oldenburg-tourismus.de/images/8hazzqwwrre-/gast-antje-reil-probiert-den-hoerthron-im-oldenburger-hoergarten.jpeg">
+        <md-card-title>
+          <h2>Hörgarten</h2>
+        </md-card-title>
+        <md-card-content>
+          <h6>Themenpark</h6>
+          <h5>Marie-Curie-Straße 2 / 26129 Oldenburg</h5>
+        </md-card-content>
+        <md-card-actions align="end">
+          <button md-button (click)="setcard21(!card21)" *ngIf="card21"><md-icon>delete</md-icon></button>
+          <button md-button>mehr erfahren</button>
+        </md-card-actions>
+      </md-card>
+    </li>
+    <li class="flex-item" *ngIf="card22">
+      <md-card class="flex-card">
+        <img md-card-image src="//www.oldenburg-tourismus.de/images/dfiv!saw0ue-/die-historischen-wallanlagen-vor-dem-kulturzentrum-pfl.jpeg">
+        <md-card-title>
+          <h2>Wallanlagen</h2>
+        </md-card-title>
+        <md-card-content>
+          <h6>Denkmalgeschützte Gartenanlagen in der…</h6>
+          <h5>Heiligengeistwall / 26122 Oldenburg</h5>
+        </md-card-content>
+        <md-card-actions align="end">
+          <button md-button (click)="setcard22(!card22)" *ngIf="card22"><md-icon>delete</md-icon></button>
           <button md-button>mehr erfahren</button>
         </md-card-actions>
       </md-card>
     </li>
 
-  </ul>
 
+  </ul>
 </div>
+<div class="spase-siv"></div>
